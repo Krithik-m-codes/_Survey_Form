@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <header class="header">
+        <h2>Simple Survey Form <span>3000</span></h2>
+
+    </header>
+    <div class="above-circle">
+
+    </div>
+    <div class="container">
+
+        <h2 style="text-align: left;">Registration</h2>
+        <hr>
+        <form onsubmit=" return ValidateForm()" method="post" name="SurveyForm">
+            <div class="top-form">
+                <fieldset class="basic">
+                    <legend>Basic Details</legend>
+                    <div class="personal-details">
+                        <p name="name">First Name : <input type="text" class="input-min-width" size="60" name="name"
+                                aria-label="name" placeholder="Enter your First Name "></p>
+                        <p>Last Name : <input type="text" class="input-min-width" size="60" aria-label="name"
+                                placeholder="Enter your Last Name "></p>
+                        <div class="gender-age">
+                            <p>Gender :
+                                <select name="gender" required>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </p>
+                            <p>Age : <input type="number" min="18" max="99" name="age" id="age" required
+                                    aria-label="age"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-details">
+                        <p>Email address : <input type="email" class="input-min-width" required maxlength="29"
+                                placeholder="example@xyz.com" name="email" id="email" aria-label="email">
+                        </p>
+                        <p>Contact Number : <input type="number" class="input-min-width input-number" maxlength="12" required
+                                placeholder="+91********** Only" name="number" id="number" aria-label="email">
+                        </p>
+
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <div class="middle-form">
+                <div class="Address">
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                        <div>
+                            <label for="address">Address Line 1 : </label>
+                            <input type="text" aria-label="address-line1" name="address" id="address"
+                                placeholder="Address Line 1" maxlength="65" required>
+                            <label for="address">Address Line 2 : </label>
+                            <input type="text" aria-label="address-line2" name="address" id="address"
+                                placeholder="Address Line 2" maxlength="65" required>
+                            <div class="more-address1">
+                                <label for="address" style="font-size: 15px;">Address Line 3 : </label>
+                                <input type="text" aria-label="address-line3" name="address" class="address-s-width"
+                                    placeholder="Address Line 3" maxlength="30">
+                                <p><input type="number" class="input-min-width" maxlength="12"
+                                        placeholder="Alternate number" name="number" id="numeber" aria-label="email">
+                                </p>
+
+                            </div>
+
+                            <div class="more-address">
+                                <label>State: </label><input type="text" aria-label="state">
+                                <label>City: </label><input type="text" aria-label="city">
+                                <label>Pincode: </label><input type="number" aria-label="pincode">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+            </div>
+            <div class="bottom-form">
+                <div class="misaile">
+                    <fieldset>
+                        <legend>Work Details / Occupation</legend>
+                        <div class="work-details">
+                            <label>Occupation</label>
+                            <input type="text" aria-label="text" required>
+                            <label>Work Experience</label>
+                            <input type="number" aria-label="experience" placeholder="In yrs">
+                        </div>
+                        <div class="work-details-2">
+                            <label>Type of Work Sector</label>
+                            <input type="text" aria-label="sector" placeholder="work-type" style="padding-left: 5px;"> 
+                            <label>Reference</label>
+                            <input type="text" aria-label="reference" placeholder="Name">
+
+                        </div>
+
+                    </fieldset>
+
+
+                </div>
+                <div class="submit-div">
+                    <input type="submit" aria-label='submit' name="submit" value="Submit">
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="empty">
+        <p>Need a Server side script to submit the form and validate</p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

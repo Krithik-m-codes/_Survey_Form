@@ -1,0 +1,335 @@
+/*Import fonts from Google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*ROOT Styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+
+
+}
+
+input[type='text'] {
+    border-radius: 10px;
+    background-color: rgba(211, 255, 192, 0.69);
+
+}
+input[type='email'] , select{
+    background-color: azure;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input[type='number']{
+    background-color: aliceblue;
+    
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+input[type="submit"]:disabled {
+	background-color: gray;
+	cursor: not-allowed;
+}
+
+
+
+/*Header Styling from here*/
+
+header {
+    display: flex;
+    background-color: #E9F8F9;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    width: 100%;
+    padding: 1px 5px;
+    position: relative;
+    
+
+}
+
+header h2 {
+    font-weight: 800;
+    color: #389fa7;
+}
+
+header h2 span {
+    color: #181823;
+    border-radius: 10%;
+    border-color: #000000;
+    border-width: 1px;
+    box-shadow: 2px 2px 2px white;
+    background-color: #537FE7;
+    padding: 2px 6px;
+}
+
+
+/*Body Styling from here*/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181823;
+    overflow-y: scroll;
+    flex-direction: column;
+
+}
+
+
+/*Above Circle*/
+.above-circle{
+    height: 10vh;
+}
+
+
+
+/*Body main content from here*/
+.container {
+    /*background-color: #C0EEF2;
+    background-color : E9F8F9;
+    background-color : 537FE7;
+*/
+    background-color: #fff;
+    height: auto;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 1px #686868;
+    border-color: #181823;
+    border-width: 2px;
+
+}
+
+.container h2 {
+    font-size: 30px;
+    padding-left: 16px;
+    color: black;
+    text-shadow: 2px 2px 2px #a3a3c2;
+    height: 50px;
+
+}
+/*Form STYLING*/
+form{
+    margin-top: 10px;
+}
+
+
+
+/*Styling for Top part of Form*/
+.top-form {
+   
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: #1818232d;
+
+}
+
+.top-form fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+    flex-direction: row;
+
+}
+
+
+.personal-details {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:start;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+.personal-details p{
+    margin: 5px 0px;
+}
+
+.personal-details select{
+    width: 50%;
+    border-radius: 5px;
+    border-width: 2px;
+}
+.gender-age{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+.contact-details{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.contact-details p{
+    margin: 5px 0px;
+}
+
+.input-min-width {
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    padding: 3px 1px;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+/*Middle Form Styling*/
+.middle-form{
+    margin-top: 10px;
+    padding: 10px 10px;
+    width: 100%;
+    background-color: #7171aeae;
+    border-radius: 10px;
+
+}
+
+.Address{
+    
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Address fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.Address div{
+    margin: 15px 10px;
+}
+
+.Address label{
+    margin: 5px 0px;
+}
+
+.Address input{
+    width: 92%;
+    padding: 3px;
+    margin: 1px 15px 1px 10px;
+    padding: 1% 3%;
+    border-radius: 10px;
+
+}
+
+.more-address1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 15px;
+    margin: 0%;
+
+}
+
+
+.more-address1 input[type='text']{
+    width: 360px;
+}
+
+.more-address{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 15px;
+    margin: 0%;
+}
+
+
+
+/*Bottom Form Styling*/
+.bottom-form{
+   background-color: #54afb6;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.misaile{
+
+    padding: 5px ;
+}
+
+.misaile fieldset{
+   padding: 5px;
+   margin: 5px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+
+}
+
+.work-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+.submit-div{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.misaile input[type='number']{
+    width: 69px !important;
+    border-radius: 5px;
+    padding: 0px 2px ;
+    
+
+}
+
+.empty{
+    height: 9vh;
+    background-color: #181823;
+    color: #fff;
+    margin: 20px 0px 0px 0px;
+}
